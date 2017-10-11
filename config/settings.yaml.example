@@ -1,0 +1,11 @@
+device_id: 'livingroom'
+home_assistant:
+  mqtt:
+    host: '192.168.1.172'
+    port: 11883
+    username: 'snips_livingroom'
+    password: '<random-password>'
+snips:
+  mqtt:
+    host: 'localhost'
+    port: 1883

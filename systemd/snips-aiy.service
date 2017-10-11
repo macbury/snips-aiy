@@ -1,0 +1,15 @@
+[Unit]
+Description=voice recognizer
+After=network.target ntpdate.service
+
+[Service]
+Environment=PATH=/home/pi/snips-aiy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/usr/bin/python -u snips_aiy.py
+WorkingDirectory=/home/pi/snips-aiy
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

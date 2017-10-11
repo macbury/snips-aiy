@@ -1,0 +1,3 @@
+*.tags
+*.pyc
+config/settings.yaml
